@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY server.pl .
 
-EXPOSE 5000
+EXPOSE 4000
 
-CMD ["swipl", "-g", "start_server(5000)", "-t", "halt", "server.pl"]
+CMD ["swipl", "-g", "start_server(4000), wait_forever", "server.pl"]
