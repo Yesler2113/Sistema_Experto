@@ -278,5 +278,11 @@ cors_headers :-
     format('Access-Control-Allow-Headers: Content-Type~n').
 
 
+% Inicia el servidor y espera indefinidamente
+
+wait_forever :- repeat, sleep(1), fail.
+
+
+
 
 
